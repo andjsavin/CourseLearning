@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    background-image: url("images/kyiv-header-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 5px 10px;
+    border: 2px solid whitesmoke;
+    background-color: steelblue;
+}
+
+#header h3 {
+    margin-top: 10px;
+    font-style: italic;
+    padding: 5px 10px;
+    border: 2px solid whitesmoke;
+    background-color: steelblue;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+#activity-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(248, 223, 226);
+}
+
+.activity-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.activity {
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.activity h2 {
+    margin: 10px 0;
+    text-align: center;
+    color: whitesmoke;
+    background-color: steelblue;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.activity p {
+    margin: 10px 0;
+    text-align: center;
+    color: whitesmoke;
+    background-color: steelblue;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.activity:hover>.activity-image-container {
+    border-radius: 0;
+    transform: scale(6);
+    margin: 0;
+    padding: 0;
+}
+
+.activity:hover>.activity-image {
+    border-radius: 0;
+    transform: scale(6);
+    margin: 0;
+    padding: 0;
+}
+
+.activity:hover>h2 {
+    display: none;
+}
+
+.activity:hover>p {
+    display: none;
+}
+
+.activity-image {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.activity-image-container {
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+}
+
+#tour-guide {
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#tour-avatar-image {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 50%;
+}
+
+#tour-guide-description {
+    margin-left: 20px;
+    text-align: left;
+}
+
+#tour-guide-description h2 {
+    color: whitesmoke;
+    background-color: steelblue;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+#tour-guide-description p {
+    color: whitesmoke;
+    background-color: steelblue;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+#footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    margin: 0;
+    padding: 10px;
+    background-color:blueviolet;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#footer a {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+#footer p {
+    margin: 0 0 5px;
+}
