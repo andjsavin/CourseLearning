@@ -6,7 +6,7 @@ type Pizza = {
 
 type Order = {
     id: number
-    pizza: Pizza | undefined
+    pizza: Pizza
     status: "ordered" | "completed"
 }
 
@@ -41,10 +41,10 @@ function addToArray<T>(array: T[], item: T): T[] {
 }
 
 addToArray(menu, {id: nextPizzaId++, name: "Chicken Bacon Ranch", price: 12 })
-addToArray<Order>(orderQueue, { id: nextOrderId++, pizza: menu[2], status: "completed" })
+addToArray<Order>(orderQueue, { id: nextOrderId++, pizza: { id: nextPizzaId++, name: "Pepperoni", price: 10 }, status: "completed" })
 
-console.log(menu)
 console.log(orderQueue)
+console.log(menu)
 
 
 function completeOrder(orderId: number): Order | undefined {
