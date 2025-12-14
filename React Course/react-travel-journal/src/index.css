@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F55A5A;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 45px;
+}
+
+.header-img {
+    height: 50%;
+    width: auto;
+    margin-right: 7px;
+}
+
+.header-title {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.entry {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    max-height: 168px;
+    margin-bottom: 36px;
+    overflow: hidden;
+}
+
+.entry-image-container {
+    flex-shrink: 0;
+    overflow: hidden;
+    width: 125px;
+    height: 168px;
+    margin: 0px 19px 0px 40px;
+    border-radius: 5px;
+}
+
+.entry-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.entry-details {
+    margin: 0;
+}
+
+.entry-location {
+    display: flex;
+    align-items: center;
+}
+
+.entry-marker {
+    width: 7px;
+    height: 10px;
+    margin-right: 4px;
+}
+
+.entry-country {
+    color: #2B283A;
+    font-size: 10px;
+    letter-spacing: 0.17em;
+    font-weight: 400;
+    margin-right: 12px;
+}
+
+.entry-map-link {
+    font-size: 10px;
+    color: #918E9B;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.entry-map-link:visited {
+    color: #918E9B;
+}
+
+.entry-map-link:hover {
+    color: #F55A5A;
+}
+
+.entry-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 7px;
+    color: #2B283A;
+}
+
+.entry-dates {
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 17px;
+    color: #2B283A;
+}
+
+.entry-description {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 9px;
+    color: #2B283A;
+}
