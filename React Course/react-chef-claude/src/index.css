@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #FAFAF8;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    height: 111px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.header-logo-image {
+    height: 52px;
+    width: 43px;
+    margin: 4px 11px 4px 0;
+}
+
+.header-logo-text {
+    font-size: 32px;
+    font-weight: 400;
+    color: #141413;
+    margin: 4px 0;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    gap: 12px;
+    margin: 70px auto;
+    max-width: 777px;
+    min-width: 0;
+    max-height: 38px;
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    margin-bottom: 48px;
+}
+
+.add-ingridient-input {
+    height: 100%;
+    border: 1px solid #D1D5DB;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    padding-left: 13px;
+    color: #141413;
+    font-size: 14px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 594px;
+}
+
+.add-ingridient-input::placeholder {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.add-ingridient-input:focus {
+    border: 2px solid #831875;
+    outline: none;
+}
+
+.add-ingridient-button {
+    background-color: #141413;
+    color: #FAFAF8;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    min-width: 0;
+    max-width: 183px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.add-ingridient-button:hover {
+    background-color: #831875;
+    cursor: pointer;
+}
+
+.add-ingridient-button:active {
+    background-color: #831875;
+    transform: scale(0.98);
+}
+
+.ingridient-list {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 0 auto 48px auto;
+    max-width: 777px;
+    min-width: 300px;
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.ingridient-list > h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 24px;
+    color: #141413;
+}
+
+.ingridient-list > ul {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 30px;
+    color: #475467;
+}
+
+.claude-request {
+    overflow: hidden;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0 auto 60px auto;
+    max-width: 777px;
+    min-width: 300px;
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    background-color: #F0EFEB;
+    border-radius: 8px;
+}
+
+.claude-request-text {
+    margin-left: 42px;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    padding: 0;
+}
+
+.claude-request-text > h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #141413;
+    margin-bottom: 8px;
+}
+
+.claude-request-text > p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6B7280;
+    margin: 0;
+}
+
+.claude-request-button {
+    margin-right: 41px;
+    margin-bottom: 28px;
+    width: 115px;
+    height: 38px;
+    padding: 0;
+    border-radius: 6px;
+    background-color: #D17557;
+    color: #FAFAF8;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.claude-request-button:hover {
+    background-color: #831875;
+    cursor: pointer;
+}
+
+.claude-request-button:active {
+    background-color: #831875;
+    transform: scale(0.98);
+}
+
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 777px;
+    min-width: 300px;
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}
